@@ -1,6 +1,6 @@
 #ifndef ARBOLBINARIO_H
 #define ARBOLBINARIO_H
-#include "TdaArbol.cpp"
+#include "tdaarbol.cpp"
 
 class ArbolBinario
 {
