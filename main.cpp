@@ -1,8 +1,8 @@
-#include <QApplication>
+#include "reinas.cpp"
+#include "MainWindow.h"
 //using namespace std;
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    return a.exec();
+
 }
