@@ -13,7 +13,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    QList<QLabel>Labels;
+    QList<QLabel*>Labels;
     void setLabelsDeReinas(int tableroPos, bool reina);
     void cambiarImagenes(int tableroPos,bool reina);
     explicit MainWindow(QWidget *parent = nullptr);

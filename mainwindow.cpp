@@ -19,7 +19,7 @@ MainWindow::~MainWindow()
 /*/
 void  MainWindow::setLabelsDeReinas(int tableroPos, bool reina){
     QLabel *label = new QLabel(this);
-    Labels.push_back(*label);
+    Labels.push_back(label);
     label->setGeometry(15+100*(tableroPos%8),15+100*(tableroPos/8),100,100);
     QPixmap pixmap;
     //En esta parte tableroPos es el lugar donde se encuentra el espacio a verificar
@@ -48,8 +48,8 @@ void MainWindow::cambiarImagenes(int tableroPos,bool reina){
     } else {
        pixmap=QPixmap ("blancoR.jpg");
     }
-    Labels.at(int tableroPos)->setPixmap(pixmap);
-    Labels.at(int tableroPos)->setMask(pixmap.mask())
+    Labels.at(tableroPos)->setPixmap(pixmap);
+    Labels.at(tableroPos)->setMask(pixmap.mask());
 
 }
 
