@@ -1,6 +1,6 @@
 #include "MainWindow.h"
-#include "ui_mainwindow.h"
-#include "reinas.h"
+#include "ui_MainWindow.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -12,6 +12,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
 /*
  *Este netidi me crea un Qlist con elementos tipo Qlabel
  *el Qpixmap se supone que cambia la imagen que posee el label
@@ -52,4 +53,3 @@ void MainWindow::cambiarImagenes(int tableroPos,bool reina){
     Labels.at(tableroPos)->setMask(pixmap.mask());
 
 }
-

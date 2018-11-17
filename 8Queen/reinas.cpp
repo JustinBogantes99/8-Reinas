@@ -1,7 +1,6 @@
 #include "reinas.h"
-const int N = 8;
-const int n = (N+1);
-int reinasList[n];
+#include <stdio.h>
+#include <iostream>
 reinas::reinas()
 {
 
@@ -44,4 +43,13 @@ void reinas::ponerReina(int i, bool& solucion)
         solucion = true;
         }
     } while(!solucion && (k < 8));
+}
+using namespace std;
+void reinas::mostrarList()
+{
+    int tam = sizeof(reinasList)/sizeof(*reinasList);
+    for (int i=0;i<=tam;i++)
+    {
+        cout<<reinasList[i]<<endl;
+    }
 }

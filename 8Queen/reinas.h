@@ -5,10 +5,13 @@
 class reinas
 {
 public:
-    QList<QLabel>Labels;
     reinas();
     bool valido(int i);
     void ponerReina(int i, bool& solucion);
+    void mostrarList();
+private:
+    const int N = 8;
+    int reinasList[8];
 
 };
 

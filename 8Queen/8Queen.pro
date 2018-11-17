@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-11-13T12:02:14
+# Project created by QtCreator 2018-11-15T16:42:22
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = 8Reinas2
+TARGET = 8Queen
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,15 +26,18 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-    MainWindow.cpp \
+        MainWindow.cpp \
+    ListaDoble.cpp \
     reinas.cpp
 
 HEADERS += \
-    MainWindow.h \
+        MainWindow.h \
+    Nodo.h \
+    ListaDoble.h \
     reinas.h
 
 FORMS += \
-        mainwindow.ui
+        MainWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
