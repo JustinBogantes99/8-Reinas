@@ -23,7 +23,7 @@ ListaDoble<T>::ListaDoble(ListaDoble<T> const &original){
 }
 
 template<class T>
-void ListaDoble<T>::insertarNodo (T &dato)
+void ListaDoble<T>::insertarNodo (T dato)
 {
     if(!primero)
     {

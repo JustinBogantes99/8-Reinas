@@ -13,7 +13,7 @@ class ListaDoble
         typedef T type;
         ListaDoble();
         ListaDoble(ListaDoble<T>  const &original);
-        void insertarNodo (T &Dato);
+        void insertarNodo (T Dato);
         void imprimirLista();
         int getTam();
         Nodo<T>* operator[](int const index);

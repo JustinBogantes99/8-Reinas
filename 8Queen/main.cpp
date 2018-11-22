@@ -1,20 +1,19 @@
 #include "MainWindow.h"
-#include "reinas.h"
 #include <QApplication>
+#include <stdio.h>
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    reinas *juego = new reinas();
+   /* reinas *juego = new reinas();
     bool respuesta = false;
     int reina = 1;
     //juego->mostrarList();
     juego->ponerReina(reina,respuesta);
-    juego->mostrarList();
-    for(int n=0;n<64;n++)
-    {
-        //setLabelsDeReinas(n,0);
-    }
+    //juego->mostrarList();
+    int* listaReinas = juego->getReinasList();
+    std::cout<<listaReinas[2]<<std::endl;*/
     MainWindow w;
     w.show();
 

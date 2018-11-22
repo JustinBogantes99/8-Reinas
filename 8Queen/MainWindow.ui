@@ -6,25 +6,48 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1583</width>
-    <height>930</height>
+    <width>1197</width>
+    <height>834</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="generarSolucionButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1581</width>
-      <height>871</height>
+      <x>970</x>
+      <y>590</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Generar solución</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>100</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soluciones</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="soluciones">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>160</y>
+      <width>221</width>
+      <height>321</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -33,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1583</width>
+     <width>1197</width>
      <height>21</height>
     </rect>
    </property>
